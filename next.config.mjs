@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Serve app from /landing-page path
+  basePath: '/landing-page',
   // Embed public env vars at build time — required for Cloudflare Pages
   env: {
     NEXT_PUBLIC_SUPABASE_URL: "https://tntuqvkmohvueckdhryv.supabase.co",
