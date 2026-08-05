@@ -9,27 +9,27 @@ export default function Faq() {
   const faqs = [
     {
       q: "What is the minimum NEET score required for BDS admission?",
-      a: "As per the cut off."
+      a: "There isn't a fixed minimum score for BDS admission. Every year, the cutoff changes depending on factors like the number of applicants, seat availability, and category. Share your NEET score with us, and we'll help you understand your chances and suggest the best colleges accordingly."
     },
     {
       q: "Is the first counselling session really free?",
-      a: "Yes it's completely Free!"
+      a: "Yes, it is! Your first counselling session is completely free. We'll understand your NEET score, discuss your career goals, answer all your questions, and help you explore the best admission options—without any obligation or hidden charges."
     },
     {
       q: "Do you help with both government and private college admissions?",
-      a: "Only Private colleges."
+      a: "We currently focus on admissions to private dental and medical colleges only. Whether you need help choosing the right college, understanding the counselling process, or completing the required documentation, our experienced team will guide you every step of the way, making your admission journey simple, transparent, and hassle-free."
     },
     {
       q: "Can I get BDS admission with a low NEET score?",
-      a: "Yes."
+      a: "Yes, you may still have a good chance of getting BDS admission, even with a lower NEET score. The possibilities depend on the current year's cutoff, seat availability, and your category. Our counsellors will help you explore the best options based on your score."
     },
     {
       q: "Which states do you cover for BDS/MDS/MBBS admissions?",
-      a: "Across India."
+      a: "We provide admission guidance for BDS, MDS, and MBBS courses across India. Whether you're looking for colleges in your home state or elsewhere, our team will help you find suitable options and guide you through the complete admission process."
     },
     {
       q: "How do I get started?",
-      a: "Just fill the form given here and our team will connect with you."
+      a: "Getting started is easy. Simply fill out the enquiry form on our website with your basic details. Once we receive your information, one of our admission experts will get in touch, understand your requirements, and guide you through the next steps toward securing your admission."
     }
   ];
 
