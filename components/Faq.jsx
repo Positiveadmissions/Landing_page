@@ -9,15 +9,15 @@ export default function Faq() {
   const faqs = [
     {
       q: "What is the minimum NEET score required for BDS admission?",
-      a: "For BDS in private dental colleges, a score of 200+ can secure admission depending on your category and state. General category students need at least 213 (50th percentile) to qualify. Contact us for a personalised assessment based on your score and category."
+      a: "As per the cut off."
     },
     {
       q: "Is the first counselling session really free?",
-      a: "Yes, 100% free. We assess your profile, explain your options and give you a clear roadmap — all at no cost. You only pay when you're fully satisfied and choose to proceed with our premium admission services."
+      a: "Yes it's completely Free!"
     },
     {
       q: "Do you help with both government and private college admissions?",
-      a: "Absolutely. We assist with State Counselling (Government Quota), Management Quota, NRI Quota and Institutional Quota seats for both government and private dental and medical colleges across India."
+      a: "Only Private colleges."
     },
     {
       q: "Can I get BDS admission with a low NEET score?",
