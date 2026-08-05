@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className="container">
         <div className="nav-inner">
           <a href="#" className="nav-logo">
-            <Image src="/logo.svg" alt="Positive Admission Guidance" width={220} height={54} className="logo-img" style={{ width: "auto" }} priority />
+            <Image src="/logo.png" alt="Positive Admission Guidance" width={220} height={220} className="logo-img" style={{ width: "auto", height: "54px" }} priority />
           </a>
 
           <ul className="nav-links" id="navLinks">
