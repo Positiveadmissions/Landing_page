@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -21,15 +21,15 @@ export default function Faq() {
     },
     {
       q: "Can I get BDS admission with a low NEET score?",
-      a: "Yes, in many cases. Several reputed private dental colleges have seats available through management quota where the minimum qualifying score (177 for OBC/SC/ST, 213 for General) is sufficient. Our counsellors will analyse your profile and find the best college for your score."
+      a: "Yes."
     },
     {
       q: "Which states do you cover for BDS/MDS/MBBS admissions?",
-      a: "We operate pan-India with special expertise in Madhya Pradesh, Chhattisgarh, Maharashtra, Karnataka, Rajasthan and Delhi NCR. Our offices are located in Bilaspur and Jabalpur."
+      a: "Across India."
     },
     {
       q: "How do I get started?",
-      a: "Fill the form above or call us directly at 9522850000 / 9522850000. Our counsellor will call you within 24 hours to begin your personalised admission journey."
+      a: "Just fill the form given here and our team will connect with you."
     }
   ];
 
@@ -60,7 +60,7 @@ export default function Faq() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              className="faq-item"
+              className={`faq-item${openIndex === idx ? " open" : ""}`}
             >
               <button 
                 className="faq-question" 
@@ -72,21 +72,9 @@ export default function Faq() {
                   +
                 </span>
               </button>
-              <AnimatePresence>
-                {openIndex === idx && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    style={{ overflow: "hidden" }}
-                  >
-                    <div className="faq-answer">
-                      <div className="faq-answer-inner">{item.a}</div>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              <div className="faq-answer">
+                <div className="faq-answer-inner">{item.a}</div>
+              </div>
             </motion.div>
           ))}
         </div>
