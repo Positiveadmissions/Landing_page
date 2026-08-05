@@ -55,10 +55,9 @@ export default function Courses() {
             </div>
             <h3 className="course-title">BDS</h3>
             <p className="course-full">Bachelor of Dental Surgery</p>
-            <p className="course-desc">Complete support for BDS admissions in top government and private dental colleges across India. NEET-based counselling with full documentation assistance.</p>
+            <p className="course-desc">Complete support for BDS admissions in top private dental colleges across India. NEET-based counselling with full documentation assistance.</p>
             <ul className="course-highlights">
-              <li>✓ Government &amp; Private Dental Colleges</li>
-              <li>✓ State &amp; Management Quota</li>
+              <li>✓ NRI &amp; Management Quota</li>
               <li>✓ Transparent Fee Guidance</li>
               <li>✓ Hostel &amp; Scholarship Support</li>
             </ul>
@@ -89,10 +88,9 @@ export default function Courses() {
             </div>
             <h3 className="course-title">MBBS</h3>
             <p className="course-full">Bachelor of Medicine &amp; Surgery</p>
-            <p className="course-desc">Comprehensive MBBS admission support for NEET qualified students. We guide you to the best possible college based on your score, category and preference.</p>
+            <p className="course-desc">Comprehensive MBBS admission support for NEET qualified students. We guide you to the best private medical college based on your score and preference.</p>
             <ul className="course-highlights">
-              <li>✓ Government &amp; Private MBBS</li>
-              <li>✓ All India &amp; State Quota</li>
+              <li>✓ NRI &amp; Management Quota</li>
               <li>✓ Score-based College Shortlist</li>
               <li>✓ Complete Documentation</li>
             </ul>
