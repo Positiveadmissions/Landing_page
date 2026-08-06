@@ -1942,10 +1942,8 @@ footer {
   transition: var(--transition);
 }
 
-.process-step-mini:hover .step-num-mini {
-  background: linear-gradient(135deg, var(--accent-gold), #e6a800);
-  color: var(--navy);
-}
+
+
 
 .step-icon-mini { font-size: 1.4rem; }
 
@@ -2177,6 +2175,38 @@ footer {
 
 .cutoff-table-icon {
   font-size: 2rem;
+}
+
+.cutoff-table-icon-img {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* BDS Featured Card — animated shimmer border */
+@keyframes shimmer-border {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.course-card.featured {
+  position: relative;
+  z-index: 0;
+}
+
+.course-card.featured::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: calc(var(--radius-md) + 2px);
+  background: linear-gradient(135deg, var(--accent-gold), var(--royal-blue), var(--accent-gold));
+  background-size: 300% 300%;
+  animation: shimmer-border 4s ease infinite;
+  z-index: -1;
 }
 
 .cutoff-table-title {

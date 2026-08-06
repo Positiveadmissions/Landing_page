@@ -64,7 +64,7 @@ export default function Courses() {
             <ul className="course-highlights">
               <li>✓ NRI &amp; Management Quota</li>
               <li>✓ Transparent Fee Guidance</li>
-              <li>✓ Hostel &amp; Scholarship Support</li>
+              <li>✓ Complete Documentation Assistance</li>
             </ul>
             <a href="#contact" className="course-cta">Get Counselling →</a>
           </motion.div>

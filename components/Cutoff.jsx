@@ -1,21 +1,22 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Cutoff() {
   const ugCutoffs = [
-    { category: "General", percentile: "50th Percentile", score: "213" },
-    { category: "OBC", percentile: "40th Percentile", score: "177" },
-    { category: "SC / ST", percentile: "40th Percentile", score: "177" },
-    { category: "General – EWS", percentile: "45th Percentile", score: "194" },
+    { category: "General", score: "213" },
+    { category: "OBC", score: "177" },
+    { category: "SC / ST", score: "177" },
+    { category: "General – EWS", score: "194" },
   ];
 
   const pgCutoffs = [
-    { category: "General", percentile: "50th Percentile", score: "As per NTA" },
-    { category: "OBC", percentile: "40th Percentile", score: "As per NTA" },
-    { category: "SC / ST", percentile: "40th Percentile", score: "As per NTA" },
-    { category: "General – EWS", percentile: "45th Percentile", score: "As per NTA" },
+    { category: "General", score: "As per NTA" },
+    { category: "OBC", score: "As per NTA" },
+    { category: "SC / ST", score: "As per NTA" },
+    { category: "General – EWS", score: "As per NTA" },
   ];
 
   return (
@@ -45,7 +46,9 @@ export default function Cutoff() {
             className="cutoff-table-wrap"
           >
             <div className="cutoff-table-header">
-              <span className="cutoff-table-icon">🦷</span>
+              <div className="cutoff-table-icon-img">
+                <Image src="/icon-bds.webp" alt="BDS & MBBS" width={48} height={48} style={{ objectFit: "contain" }} />
+              </div>
               <div>
                 <h3 className="cutoff-table-title">BDS &amp; MBBS</h3>
                 <p className="cutoff-table-sub">NEET UG — Undergraduate</p>
@@ -55,15 +58,13 @@ export default function Cutoff() {
               <thead>
                 <tr>
                   <th>Category</th>
-                  <th>Percentile</th>
-                  <th>Min. Score</th>
+                  <th>Cutoff</th>
                 </tr>
               </thead>
               <tbody>
                 {ugCutoffs.map((row, i) => (
                   <tr key={i}>
                     <td>{row.category}</td>
-                    <td>{row.percentile}</td>
                     <td className="cutoff-score">{row.score}</td>
                   </tr>
                 ))}
@@ -81,7 +82,9 @@ export default function Cutoff() {
             className="cutoff-table-wrap"
           >
             <div className="cutoff-table-header">
-              <span className="cutoff-table-icon">🏥</span>
+              <div className="cutoff-table-icon-img">
+                <Image src="/icon-mds.webp" alt="MDS" width={48} height={48} style={{ objectFit: "contain" }} />
+              </div>
               <div>
                 <h3 className="cutoff-table-title">MDS</h3>
                 <p className="cutoff-table-sub">NEET MDS — Postgraduate</p>
@@ -91,15 +94,13 @@ export default function Cutoff() {
               <thead>
                 <tr>
                   <th>Category</th>
-                  <th>Percentile</th>
-                  <th>Min. Score</th>
+                  <th>Cutoff</th>
                 </tr>
               </thead>
               <tbody>
                 {pgCutoffs.map((row, i) => (
                   <tr key={i}>
                     <td>{row.category}</td>
-                    <td>{row.percentile}</td>
                     <td className="cutoff-score">{row.score}</td>
                   </tr>
                 ))}
