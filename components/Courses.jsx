@@ -53,7 +53,7 @@ export default function Courses() {
           <motion.div variants={cardVariants} className="course-card featured">
             <div className="course-card-top">
               <div className="course-icon">
-                <Image src="/icon-bds.png" alt="BDS icon" width={64} height={64} style={{ objectFit: "contain" }} />
+                <Image src="/icon-bds.webp" alt="BDS icon" width={64} height={64} style={{ objectFit: "contain" }} />
               </div>
               <div className="course-badge">Most Popular</div>
             </div>
@@ -73,7 +73,7 @@ export default function Courses() {
           <motion.div variants={cardVariants} className="course-card">
             <div className="course-card-top">
               <div className="course-icon">
-                <Image src="/icon-mbbs.png" alt="MBBS icon" width={64} height={64} style={{ objectFit: "contain" }} />
+                <Image src="/icon-mbbs.webp" alt="MBBS icon" width={64} height={64} style={{ objectFit: "contain" }} />
               </div>
               <div className="course-badge">Medical</div>
             </div>
@@ -93,7 +93,7 @@ export default function Courses() {
           <motion.div variants={cardVariants} className="course-card">
             <div className="course-card-top">
               <div className="course-icon">
-                <Image src="/icon-mds.png" alt="MDS icon" width={64} height={64} style={{ objectFit: "contain" }} />
+                <Image src="/icon-mds.webp" alt="MDS icon" width={64} height={64} style={{ objectFit: "contain" }} />
               </div>
               <div className="course-badge gold-badge">Specialist</div>
             </div>
