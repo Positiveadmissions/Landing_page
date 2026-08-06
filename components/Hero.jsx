@@ -26,7 +26,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-sub">
-            Expert admission guidance for <strong>BDS, MDS &amp; MBBS</strong> in top dental and medical colleges across India.<br /><br />
+            Expert admission guidance for <strong>BDS, MBBS &amp; MDS</strong> in top dental and medical colleges across India.<br /><br />
             <strong>100% Transparent Counselling.</strong> No Hidden Charges. Personalized Support.
           </p>
 
@@ -37,11 +37,11 @@ export default function Hero() {
             </div>
             <div className="hero-pill">
               <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clipRule="evenodd"/></svg>
-              MDS (Specialisation)
+              MBBS (Medical)
             </div>
             <div className="hero-pill">
               <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clipRule="evenodd"/></svg>
-              MBBS (Medical)
+              MDS (Specialisation)
             </div>
             <div className="hero-pill">
               <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clipRule="evenodd"/></svg>
@@ -124,8 +124,8 @@ export default function Hero() {
             >
               <div className="stat-icon gold">🦷</div>
               <div className="stat-info">
-                <div className="stat-val">BDS / MDS</div>
-                <div className="stat-label">Dental Specialist</div>
+                <div className="stat-val">BDS / MBBS</div>
+                <div className="stat-label">Dental &amp; Medical</div>
               </div>
             </motion.div>
 

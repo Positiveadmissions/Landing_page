@@ -2108,10 +2108,153 @@ footer {
   .why-stat { border-right: none; border-bottom: 1px solid var(--border-color); }
   .why-stat:last-child { border-bottom: none; }
 
+
   /* Logo smaller on very small screens */
   .logo-img { height: 42px; }
 
   /* Floating stats hidden on very small screens to avoid overflow */
   .floating-stat { display: none; }
 }
+
+/* ============ COURSE LEVEL TAGS (UG / PG) ============ */
+.course-level-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+.ug-tag {
+  background: rgba(16, 62, 125, 0.08);
+  color: var(--royal-blue);
+  border: 1px solid rgba(16, 62, 125, 0.18);
+}
+.pg-tag {
+  background: rgba(244, 180, 0, 0.1);
+  color: #9a7000;
+  border: 1px solid rgba(244, 180, 0, 0.3);
+}
+
+/* Course icon image sizing */
+.course-icon img {
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: contain;
+}
+
+/* ============ CUTOFF SECTION ============ */
+#cutoff { padding: 80px 0; }
+
+.cutoff-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cutoff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.cutoff-table-wrap {
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.cutoff-table-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.cutoff-table-icon {
+  font-size: 2rem;
+}
+
+.cutoff-table-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 2px;
+}
+
+.cutoff-table-sub {
+  font-size: 0.8rem;
+  color: var(--muted-text);
+  margin: 0;
+}
+
+.cutoff-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.cutoff-table thead tr {
+  background: var(--light-grey);
+}
+
+.cutoff-table th {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.cutoff-table td {
+  padding: 12px 14px;
+  color: var(--dark-text);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cutoff-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cutoff-table tbody tr:hover {
+  background: rgba(16, 62, 125, 0.03);
+}
+
+.cutoff-score {
+  font-weight: 700;
+  color: var(--royal-blue);
+}
+
+.cutoff-note {
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.cutoff-cta {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cutoff-cta p {
+  font-size: 1rem;
+  color: var(--muted-text);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .cutoff-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 

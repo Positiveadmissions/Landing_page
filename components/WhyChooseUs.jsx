@@ -1,13 +1,14 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedCounter from "./AnimatedCounter";
 
 export default function WhyChooseUs() {
   const checklist = [
     { title: "Transparent Guidance, No Hidden Charges", desc: "100% fee transparency — you know exactly what you pay, always." },
-    { title: "Dental & Medical Specialists Only", desc: "We focus exclusively on BDS, MDS and MBBS — deep expertise, not a generalist approach." },
+    { title: "Dental & Medical Specialists Only", desc: "We focus exclusively on BDS, MBBS and MDS — deep expertise, not a generalist approach." },
     { title: "Latest NEET Cutoff Analysis", desc: "Real-time data on cutoffs, seats and trends for the current academic year." },
     { title: "Scholarship Assistance", desc: "We identify and help apply for scholarships to reduce your financial burden." },
     { title: "Complete Documentation & Post-Admission Support", desc: "From enrollment to settling in college — we stay with you every step." }
@@ -32,7 +33,9 @@ export default function WhyChooseUs() {
             className="why-illustration"
           >
             <div className="why-illustration-inner">
-              <div className="why-big-icon">🦷</div>
+              <div className="why-big-icon">
+                <Image src="/logo.svg" alt="Positive Admission Guidance" width={180} height={60} style={{ width: "180px", height: "auto", objectFit: "contain" }} />
+              </div>
               <div className="why-illustration-title">Positive Admission Guidance</div>
               <div className="why-illustration-sub">Trusted by 5000+ students &amp; families since 2009</div>
 
