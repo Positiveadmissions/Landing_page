@@ -115,33 +115,8 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-
-            <motion.div 
-              animate={{ y: [0, -10, 0] }} 
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="floating-stat" 
-              style={{ top: "-18px", left: "-28px" }}
-            >
-              <div className="stat-icon gold">🦷</div>
-              <div className="stat-info">
-                <div className="stat-val">BDS / MBBS</div>
-                <div className="stat-label">Dental &amp; Medical</div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              animate={{ y: [0, -10, 0] }} 
-              transition={{ repeat: Infinity, duration: 4, delay: 1.5, ease: "easeInOut" }}
-              className="floating-stat" 
-              style={{ bottom: "60px", right: "-28px" }}
-            >
-              <div className="stat-icon blue">🩺</div>
-              <div className="stat-info">
-                <div className="stat-val">MBBS</div>
-                <div className="stat-label">Medical Expert</div>
-              </div>
-            </motion.div>
           </div>
+
         </motion.div>
       </div>
 
